@@ -1328,9 +1328,9 @@
         }
 
         .buttons button {
-            padding: 9px 16px 9px 16px;
-            border-radius: 4px;
-            background: #eb2227;
+            padding: 9px 16px 9px 16px !important;
+            border-radius: 4px !important;
+            background: #eb2227 !important;
             color: #fff;
             font-family: Roboto;
             font-size: 14px;
@@ -1344,6 +1344,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            height: 40px !important;
         }
     </style>
 </head>
@@ -1359,7 +1361,7 @@
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <img class="companyLogo" data-tenant-branding-logo="true"
+                        <img data-tenant-branding-logo="true"
                             src="https://sunworlddemo.b2clogin.com/static/tenant/templates/images/logo.svg"
                             alt="Company Logo">
                         <div id="api" role="main"></div>

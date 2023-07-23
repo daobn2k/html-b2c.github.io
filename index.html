@@ -40,6 +40,10 @@ body {
   height: 100%;
   font-family: Roboto;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
 }
 
 .heading h1 {
@@ -55,10 +59,13 @@ body {
 }
 
 .login {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin: -150px 0 0 -150px;
+  width: 100%;
+  height: 100%;
+  max-width: 343px;
+/*  flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login h1 {
@@ -87,10 +94,21 @@ input {
 input:focus {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
 }
+ 
+a{
+  background: #eb2227;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
 .entry-item {
   display: flex;
   flex-direction: column-reverse;
+  gap:8px
 }
 .entry-item label {
   display: none;
@@ -108,13 +126,13 @@ input:focus {
   text-align: center;
 }
 
+
 </style>
 <body>
-
     <div class="login">
-        <h1>Contoso High</h1>
-        <h2>Login</h2>
-        <hr/>
+        <div class="login-logo"> 
+          <img src="https://aadcdn.msftauthimages.net/447973e2-a2-eoqeogcge5mdrhuy8efcky0raxdokrllzxhp9ubg/logintenantbranding/0/bannerlogo?ts=638252638416494728" alt="">
+        </div>
         <div id="api">
         </div>
     </div>

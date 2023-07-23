@@ -112,60 +112,8 @@
         <h2>Login</h2>
         <hr/>
         <div id="api">
-            <div class="options">
-                <button class="accountButton firstButton claims-provider-selection" id="GoogleExchange">Google</button>
-                <button class="accountButton claims-provider-selection" id="GitHubExchange">Github</button>
-                <button class="accountButton claims-provider-selection" id="TwitterExchange">Twiter</button>
-            </div>
-                <div><input id="email" type="text" name="u" placeholder="Username" required="required" />
-                <a id="forgotPassword" href="https://bing.com">Forgot Password</a>
-                <input id="password" type="password" name="p" placeholder="Password" required="required" />
-                <button id="next" type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
-                <a id="createAccount" href="https://microsoft.com">Sign up now</a><!---->
-            </div>
         </div>
     </div>
-    <script>"use strict"; $(document).ready(function () {
-            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-                var t = document.createElement("style");
-                t.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),
-                    t.appendChild(document.createTextNode("@-ms-viewport{height:auto!important}")),
-                    document.getElementsByTagName("head")[0].appendChild(t)
-            }
-            if (navigator.userAgent.match(/MSIE 10/i)) {
-                var e = $("#footer_links_container");
-                $(e).css("padding-top", "100px")
-            }
-            var o, i = $("#background_background_image"),
-                n = function () {
-                    document.body.style.overflow = "hidden",
-                        ($(window).width() - 500) / $(window).height() < o ? (i.height($(window).height()), i.width("auto")) : (i.width($(window).width() - 500), i.height("auto")),
-                        document.body.style.overflow = ""
-                };
-            $("<img>").attr("src", i.attr("src")).on("load", function () {
-                o = this.width / this.height, n()
-            }),
-                $(window).resize(function () { n() }),
-                "undefined" != typeof $("#MicrosoftAccountExchange") && $("#MicrosoftAccountExchange").text("Microsoft"),
-                $("*").removeAttr("placeholder")
-
-            document.getElementById("email").tabIndex = "1";
-            document.getElementById("password").tabIndex="2";
-            document.getElementById("next").tabIndex="3";
-            document.getElementById("createAccount").tabIndex="4";
-            document.getElementById("forgotPassword").tabIndex="5";
-
-            var socialTabIndex = 6;
-            var socialButtons = document.getElementsByClassName("accountButton");
-            while(socialButtons.length > 0){
-                var button = socialButtons[0];
-                button.classList.remove('accountButton','claims-provider-selection');
-                button.classList.add('btn','btn-secondary', 'btn-block', 'btn-large');
-                button.tabIndex=socialTabIndex;
-                tabIndex++;
-            }   
-        });
-    </script>
 </body>
 
 </html>

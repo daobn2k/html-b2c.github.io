@@ -89,7 +89,6 @@
     }
 
     input {
-      width: 100%;
       height: 40px;
       padding: 0px 16px 0px 16px;
       border-radius: 4px;
@@ -101,15 +100,32 @@
       line-height: 22px;
       letter-spacing: 0em;
       text-align: left;
-      background: #595959;
+      color: #595959;
 
 
     }
-
-    input:focus {
-      box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+    .rememberMe{
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
+    .rememberMe input{
+          width: 16px;
+          border: 1px solid #D9D9D9;
+          margin: 0;
+    }
+    .rememberMe label{
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
 
+      color: #595959;
+      margin: 0;
+    }
+    
     a {
       color: #eb2227;
       font-family: Roboto;

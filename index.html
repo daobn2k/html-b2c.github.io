@@ -258,7 +258,6 @@
     src="https://aadcdn.msftauthimages.net/447973e2-a2-eoqeogcge5mdrhuy8efcky0raxdokrllzxhp9ubg/logintenantbranding/0/illustration?ts=638256965991331724"
     alt="" class="background-img">
   <div class="login">
-    <div class="buttons"></div>
     <div class="login-logo">
       <img
         src="https://aadcdn.msftauthimages.net/447973e2-a2-eoqeogcge5mdrhuy8efcky0raxdokrllzxhp9ubg/logintenantbranding/0/bannerlogo?ts=638252638416494728"
@@ -269,7 +268,9 @@
   </div>
   <script>
     const buttonsDoc = document.getElementsByClassName("buttons")
-    buttonsDoc[0].innerHTML = `<button id="cancel" aria-label="Hủy bỏ" formnovalidate="">Hủy bỏ</button>`
+    if (buttonsDoc) {
+      buttonsDoc[0].innerHTML = `<button id="cancel" aria-label="Hủy bỏ" formnovalidate="">Hủy bỏ</button>`
+    }
   </script>
 </body>
 
